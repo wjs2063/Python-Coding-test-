@@ -37,6 +37,9 @@ set은 입력순서가 유지되지않는다.
 상위집합: a>=b a가 b의 상위집합(같아도됨)이면 True반환 a.issuperset(b)
 겹치는 set가 겹치지않는지확인 : a.isdisjoint(b) a와 b의 교집합이 공집합이라면 True 겹치는게있으면 False
 """
+from typing import SupportsIndex
+
+
 a=set({"apple","banana","apple","abc"})
 print(a)
 
@@ -75,3 +78,34 @@ a==copy.deepcopy(a) True
 a is copy.deepcopy(a) False
 
 """
+
+a=[1,2,3,4,5]
+print(4 in a) # elem in a  a 라는 요소에 elem 가있는지 여부를 반환한다 bool 반환 ->bool
+
+""" 
+a.count(elem) a에 elem 가 몇개있는지 개수 return
+a.index(elem) a 에 elem요소의 index return
+a.append(elem) 리스트의 마지막에 elem 요소를 추가
+a.pop() a라는 list 의 마지막 요소를 추출 스택
+a.sort() Timsort 활용하여 정렬
+a.reverse() list 를 뒤집는다
+a.insert(m,n) m번째 index에 n을 삽입
+"""
+print(a[1:4:2])
+
+
+try:
+    print(a[9])
+except IndexError:
+    print("존재하지않는 index")
+
+# del a[i] i번째 요소 삭제
+#a.remove(x) x라는값 삭제
+a=[1,1,1,2,3,4]
+a.remove(1)
+print(a) 
+# 한개만 삭제됨 
+
+for key,value in enumerate(a):
+    print(f'({key},{value})')
+    
