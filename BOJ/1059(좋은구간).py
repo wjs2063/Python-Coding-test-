@@ -34,6 +34,6 @@ def solution(deque=number,target=target):
     
     # l*r 만큼의 개수에서 마지막에 [target,target] 인 경우 제외해주면 되므로 -1
     answer=l*r-1
-    
+     
     return answer
 print(solution(number,target))
