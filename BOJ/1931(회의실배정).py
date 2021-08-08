@@ -15,3 +15,4 @@ for start,end in schedule:
         cnt+=1
         prev_end=end
 print(cnt)
+ 
