@@ -6,3 +6,4 @@ time=0
 for i in range(len(atm_time)):
     time+=sum(atm_time[:i+1])
 print(time)
+ 
