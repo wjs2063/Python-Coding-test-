@@ -10,4 +10,4 @@ def tile(n):
     return dp[n]%10007
 # dp[n]:= 2xn 의 타일을 채우는 방법의 수 dp[n]=dp[n-1]+d[n-2]
 print(tile(n))
-
+ 
