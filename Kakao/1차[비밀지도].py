@@ -20,3 +20,4 @@ def solution(n,arr1,arr2):
         answer.append(val)
     return answer
 print(solution(n,arr1,arr2))
+ 
