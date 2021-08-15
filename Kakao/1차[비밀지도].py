@@ -7,7 +7,6 @@ def solution(n,arr1,arr2):
     answer=[]
     for i in range(n):
         real=bin(arr1[i]|arr2[i])[2:]
-        
         real=real.zfill(n)
         result.append(real)
     
