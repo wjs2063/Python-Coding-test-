@@ -11,5 +11,8 @@ for strs in s:
         if t1 not in result:
             result.append(t1)
 print(result)
-
+t="{{4,2,3},{3},{2,3,4,1},{2,3}}"
+p=re.compile(r"{[0-9,]+}")
+t=p.findall(t)
+print(t)
 
