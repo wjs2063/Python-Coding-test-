@@ -1,10 +1,26 @@
-from collections import deque
+def binary_search(arr,target,start,end):
+    if start>end:
+        return None
+    mid=(start+end)//2
 
+    if arr[mid]==target:
+        return mid
+    if arr[mid]<target:
+        start=mid+1
+        return binary_search(arr,target,start,end)
+    if arr[mid]>target:
+        end=mid-1
+        return binary_search(arr,target,start,end)
+    return None
 
-a=deque([1,2,3])
-
-print(a.popleft())
-
-print(a)
-
-print(a.pop(-1))
+def biserach(arr,target,start,end):
+    while start<=end:
+        mid=(start+end)//2
+        if arr[mid]==target:
+            return mid
+        if arr[mid]<target:
+            start=mid+1
+            continue
+        else:
+            end=mid-1
+    return None
